@@ -2,6 +2,8 @@
 
 Queue job management for your web app.
 
+[![Build Status](https://travis-ci.com/folded-php/queue.svg?branch=main)](https://travis-ci.com/folded-php/queue) [![Maintainability](https://api.codeclimate.com/v1/badges/20147f05d389b294ad38/maintainability)](https://codeclimate.com/github/folded-php/queue/maintainability) [![TODOs](https://img.shields.io/endpoint?url=https://api.tickgit.com/badge?repo=github.com/folded-php/queue)](https://www.tickgit.com/browse?repo=github.com/folded-php/queue)
+
 ## Summary
 
 - [About](#about)
