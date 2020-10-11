@@ -1,0 +1,43 @@
+{
+    "name": "folded/queue",
+    "description": "Queue job management for your web app.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Khalyomede",
+            "email": "khalyomede@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.4.0",
+        "webmozart/assert": "1.*",
+        "doctrine/dbal": "2.*",
+        "folded/file": "0.2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Folded\\": "src"
+        },
+        "files": [
+            "src/addJobToQueue.php",
+            "src/getJobFromQueue.php",
+            "src/hasJobFromQueue.php",
+            "src/queueDrivers.php",
+            "src/queueTypes.php",
+            "src/setQueueDriver.php",
+            "src/setQueueType.php"
+        ]
+    },
+    "scripts": {
+        "test": "pest --coverage && phpstan analyse",
+        "lint": "php-cs-fixer --allow-risky=yes fix"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "0.12.*",
+        "phpunit/phpunit": "9.*",
+        "friendsofphp/php-cs-fixer": "2.*",
+        "pestphp/pest": "0.3.*"
+    }
+}
